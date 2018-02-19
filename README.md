@@ -1,6 +1,8 @@
 ### This file is ot accurate at this stage
 ### Rupaya is a fork of [PIVX](https://github.com/PIVX-Project/PIVX) that forked [Dash](https://github.com/dashpay/dash) that forked [Bitcoin](https://github.com/bitcoin/bitcoinp)
 
+### Compiling with boost other than 1.54 will create a malfunctioning wallet. This is the default version on Ubuntu 14.04, but newer versions will come with newer boost versions.
+
 
 # Rupaya Core integration/staging repository
 
