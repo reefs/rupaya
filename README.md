@@ -1,4 +1,4 @@
-### This file is ot accurate at this stage
+### This file is not accurate at this stage
 ### Rupaya is a fork of [PIVX](https://github.com/PIVX-Project/PIVX) that forked [Dash](https://github.com/dashpay/dash) that forked [Bitcoin](https://github.com/bitcoin/bitcoinp)
 
 ### Compiling with boost other than 1.54 will create a malfunctioning wallet. This is the default version on Ubuntu 14.04, but newer versions will come with newer boost versions.
@@ -23,7 +23,7 @@ More information at [rupx.io](https://www.rupx.io) Visit our ANN thread at [Bitc
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
 <tr><td>Max Coin Supply (PoS Phase)</td><td>78,800,000 RUPX</td></tr>
-<tr><td>Premine</td><td>7000,000 RUPX</td></tr>
+<tr><td>Premine</td><td>7,000,000 RUPX</td></tr>
 </table>
 
 
