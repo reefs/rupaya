@@ -32,7 +32,7 @@ More information at [rupx.io](https://www.rupx.io) Visit our ANN thread at [Bitc
 <table>
 <th colspan=4>PoW Phase</th>
 <tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th><th>Duration (Days)</th></tr>
-<tr><td>1</td><td>7000,000 RUPX</td><td>Initial Premine for Coin Swap</td><td>0 Days</td></tr>
+<tr><td>1</td><td>7,000,000 RUPX</td><td>Initial Premine for Coin Swap</td><td>0 Days</td></tr>
 <tr><th colspan=4>PoS Phase</th></tr>
 <td colspan=2>Masternodes: 60%</td><td>Stakers: 20%</td><td>Budget: 20%</td></tr>
 </table>
