@@ -37,6 +37,7 @@ More information at [rupx.io](https://www.rupx.io) Visit our ANN thread at [Bitc
 <td colspan=2>Masternodes: 60%</td><td>Stakers: 20%</td><td>Budget: 20%</td></tr>
 </table>
 
+Governance proposals (Budget) will be usable starting from _superblock_ **43200** in cycles of 30 days. Anyone will be able to create proposals and MasterNode owners will vote them.
 
 ### PoS Rewards Breakdown
 
