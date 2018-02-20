@@ -43,7 +43,7 @@ Governance proposals (Budget) will be usable starting from _superblock_ **43200*
 <table>
 <th>Phase</th><th>Block Height</th><th>Reward</th><th>Approx. End Date</th><th>Masternodes</th><th>Stakers</th><th>Governance</th>
 <tr><td>Phase 1</td><td>0 ->  26000</td><td>100 RUPX</td><td>2018-03-01</td><td>60%</td><td>40%</td><td>0%</td></tr>
-<tr><td>Phase 2</td><td> 26001 ->   86400</td><td>120 RUPX</td><td>2018-04-21</td><td>60%</td><td>40%</td><td>0%</td></tr>
+<tr><td>Phase 2</td><td> 26001 ->   86400</td><td>120 RUPX</td><td>2018-04-11</td><td>60%</td><td>40%</td><td>0%</td></tr>
 <tr><td>Phase 2</td><td> 86401 ->  100000</td><td>120 RUPX</td><td>2018-04-21</td><td>60%</td><td>20%</td><td>20%</td></tr>
 <tr><td>Phase 3</td><td>100001 ->  200000</td><td>110 RUPX</td><td>2018-06-29</td><td>60%</td><td>20%</td><td>20%</td></tr>
 <tr><td>Phase 4</td><td>200001 ->  300000</td><td>100 RUPX</td><td>2018-09-07</td><td>60%</td><td>20%</td><td>20%</td></tr>
