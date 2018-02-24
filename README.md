@@ -23,6 +23,8 @@ More information at [rupx.io](https://www.rupx.io) Visit our ANN thread at [Bitc
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
 <tr><td>Max Coin Supply (PoS Phase)</td><td>78,800,000 RUPX</td></tr>
 <tr><td>Premine</td><td>7,000,000 RUPX</td></tr>
+<tr><td>RPC Port</td><td>7020</td></tr>
+<tr><td>P2P Port</td><td>9020</td></tr>
 </table>
 
 
