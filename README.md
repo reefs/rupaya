@@ -46,18 +46,18 @@ Governance proposals (Budget) will be usable starting from _superblock_ **43200*
 <th>Phase</th><th>Block Height</th><th>Reward</th><th>Approx. End Date</th><th>Masternodes</th><th>Stakers</th><th>Governance</th>
 <tr><td>Phase 1</td><td>0 ->  26000</td><td>100 RUPX</td><td>2018-03-01</td><td>60%</td><td>40%</td><td>0%</td></tr>
 <tr><td>Phase 2</td><td> 26001 ->   86400</td><td>120 RUPX</td><td>2018-04-11</td><td>60%</td><td>40%</td><td>0%</td></tr>
-<tr><td>Phase 2</td><td> 86401 ->  100000</td><td>120 RUPX</td><td>2018-04-21</td><td>60%</td><td>20%</td><td>20%</td></tr>
-<tr><td>Phase 3</td><td>100001 ->  200000</td><td>110 RUPX</td><td>2018-06-29</td><td>60%</td><td>20%</td><td>20%</td></tr>
-<tr><td>Phase 4</td><td>200001 ->  300000</td><td>100 RUPX</td><td>2018-09-07</td><td>60%</td><td>20%</td><td>20%</td></tr>
-<tr><td>Phase 5</td><td>300001 ->  400000</td><td>90 RUPX</td><td>2019-01-24</td><td>60%</td><td>20%</td><td>20%</td></tr>
-<tr><td>Phase 6</td><td>400001 ->  500000</td><td>80 RUPX</td><td>2018-04-21</td><td>60%</td><td>20%</td><td>20%</td></tr>
-<tr><td>Phase 7</td><td>500001 ->  600000</td><td>70 RUPX</td><td>2019-04-03</td><td>60%</td><td>20%</td><td>20%</td></tr>
-<tr><td>Phase 8</td><td>600001 ->  700000</td><td>60 RUPX</td><td>2019-06-12</td><td>60%</td><td>20%</td><td>20%</td></tr>
-<tr><td>Phase 9</td><td>700001 ->  800000</td><td>50 RUPX</td><td>2019-08-20</td><td>60%</td><td>20%</td><td>20%</td></tr>
-<tr><td>Phase 10</td><td>800001 ->  900000</td><td>40 RUPX</td><td>2019-10-28</td><td>60%</td><td>20%</td><td>20%</td></tr>
-<tr><td>Phase 11</td><td>900001 -> 1000000</td><td>30 RUPX</td><td>2020-01-06</td><td>60%</td><td>20%</td><td>20%</td></tr>
-<tr><td>Phase 12</td><td>1000001 -> 1100000</td><td>10 RUPX</td><td>2020-03-15</td><td>60%</td><td>20%</td><td>20%</td></tr>
-<tr><td>Phase 13</td><td>1100001 -> 1200000</td><td>0 RUPX</td><td>2020-05-24</td><td>60%</td><td>20%</td><td>20%</td></tr>
-<tr><td>Phase 14</td><td>1200001 -> INFINITE</td><td>0.001 RUPX</td><td>3000-01-01</td><td>60%</td><td>20%</td><td>20%</td></tr>
+<tr><td>Phase 3</td><td> 86401 ->  100000</td><td>120 RUPX</td><td>2018-04-21</td><td>60%</td><td>20%</td><td>20%</td></tr>
+<tr><td>Phase 4</td><td>100001 ->  200000</td><td>110 RUPX</td><td>2018-06-29</td><td>60%</td><td>20%</td><td>20%</td></tr>
+<tr><td>Phase 5</td><td>200001 ->  300000</td><td>100 RUPX</td><td>2018-09-07</td><td>60%</td><td>20%</td><td>20%</td></tr>
+<tr><td>Phase 6</td><td>300001 ->  400000</td><td>90 RUPX</td><td>2019-01-24</td><td>60%</td><td>20%</td><td>20%</td></tr>
+<tr><td>Phase 7</td><td>400001 ->  500000</td><td>80 RUPX</td><td>2018-04-21</td><td>60%</td><td>20%</td><td>20%</td></tr>
+<tr><td>Phase 8</td><td>500001 ->  600000</td><td>70 RUPX</td><td>2019-04-03</td><td>60%</td><td>20%</td><td>20%</td></tr>
+<tr><td>Phase 9</td><td>600001 ->  700000</td><td>60 RUPX</td><td>2019-06-12</td><td>60%</td><td>20%</td><td>20%</td></tr>
+<tr><td>Phase 10</td><td>700001 ->  800000</td><td>50 RUPX</td><td>2019-08-20</td><td>60%</td><td>20%</td><td>20%</td></tr>
+<tr><td>Phase 11</td><td>800001 ->  900000</td><td>40 RUPX</td><td>2019-10-28</td><td>60%</td><td>20%</td><td>20%</td></tr>
+<tr><td>Phase 12</td><td>900001 -> 1000000</td><td>30 RUPX</td><td>2020-01-06</td><td>60%</td><td>20%</td><td>20%</td></tr>
+<tr><td>Phase 13</td><td>1000001 -> 1100000</td><td>10 RUPX</td><td>2020-03-15</td><td>60%</td><td>20%</td><td>20%</td></tr>
+<tr><td>Phase 14</td><td>1100001 -> 1200000</td><td>0 RUPX</td><td>2020-05-24</td><td>60%</td><td>20%</td><td>20%</td></tr>
+<tr><td>Phase 15</td><td>1200001 -> INFINITE</td><td>0.001 RUPX</td><td>3000-01-01</td><td>60%</td><td>20%</td><td>20%</td></tr>
 </table>
 
