@@ -61,3 +61,5 @@ Governance proposals (Budget) will be usable starting from _superblock_ **43200*
 <tr><td>Phase 15</td><td>1200001 -> INFINITE</td><td>0.001 RUPX</td><td>3000-01-01</td><td>60%</td><td>20%</td><td>20%</td></tr>
 </table>
 
+The information in the table can be cross checked with the code [here](https://github.com/rupaya-project/rupaya/blob/v4.0.0/src/main.cpp#L2131-L2158). `Approx. End Date` has been calculated based on the target block time of 60 seconds.
+
