@@ -161,11 +161,11 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x66a06bfe0091e98d5b26381f6ac6f75b82efb6d181e3480d36dbc57e44393dba"));
 		
 		vSeeds.push_back(CDNSSeedData("dns.rupx.io", "dns.rupx.io"));         // Primary DNS Seeder
-		vSeeds.push_back(CDNSSeedData("209.250.241.176", "209.250.241.176"));         // Single node address
-        vSeeds.push_back(CDNSSeedData("209.250.243.131", "209.250.243.131"));       // Single node address
-        vSeeds.push_back(CDNSSeedData("45.77.239.108", "45.77.239.108"));       // Single node address
-		vSeeds.push_back(CDNSSeedData("107.191.44.102", "107.191.44.102"));
-		vSeeds.push_back(CDNSSeedData("144.202.0.206", "144.202.0.206")); 		
+		vSeeds.push_back(CDNSSeedData("dns1.rupx.io", "dns1.rupx.io"));         // Single node address
+        vSeeds.push_back(CDNSSeedData("dns2.rupayacoin.org", "dns2.rupayacoin.org"));       // Single node address
+        vSeeds.push_back(CDNSSeedData("dns3.rupayacoin.org", "dns3.rupayacoin.org"));       // Single node address
+		vSeeds.push_back(CDNSSeedData("dns4.rupx.io", "dns4.rupx.io"));
+		vSeeds.push_back(CDNSSeedData("dns5.rupx.io", "dns5.rupx.io")); 		
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 15);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 8);
