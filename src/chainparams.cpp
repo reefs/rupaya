@@ -253,9 +253,9 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("dns.rupx.io", "dns.rupx.io"));         // Single node address
-        vSeeds.push_back(CDNSSeedData("dns1.rupx.io", "dns1.rupx.io"));       // Single node address
-        vSeeds.push_back(CDNSSeedData("dns2.rupayacoin.org", "dns2.rupayacoin.org"));       // Single node address
+        vSeeds.push_back(CDNSSeedData("testnet.rupx.io", "testnet.rupx.io"));         // Single node address
+        vSeeds.push_back(CDNSSeedData("testnet1.rupx.io", "testnet1.rupx.io"));       // Single node address
+        vSeeds.push_back(CDNSSeedData("testnet.rupayacoin.org", "testnet.rupayacoin.org"));       // Single node address
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet rupaya addresses start with 'x' or 'y'
