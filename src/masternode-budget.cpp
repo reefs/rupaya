@@ -852,28 +852,24 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
 
 void CBudgetManager::NewBlock()
 {
-    LogPrintf("%s : !!!! before TRY_LOCK\n", __func__);
-    LogPrint("masternode","CBudgetManager::NewBlock: before TRY_LOCK !!!!!\n");
     TRY_LOCK(cs, fBudgetNewBlock);
-    LogPrintf("%s : !!!! after TRY_LOCK\n", __func__);
-    LogPrint("masternode","CBudgetManager::NewBlock: after TRY_LOCK!!!!!\n");
     if (!fBudgetNewBlock) {
-      LogPrint("masternode","CBudgetManager::NewBlock: fBudgetNewBlock false, returning!!!!!\n");
+      LogPrint("masternode","CBudgetManager::NewBlock: !!!! fBudgetNewBlock false, returning\n");
       return;
     } else {
-      LogPrint("masternode","CBudgetManager::NewBlock: fBudgetNewBlock true, moving on!!!!!\n");
+      LogPrint("masternode","CBudgetManager::NewBlock: !!!! fBudgetNewBlock true, moving on\n");
     }
 
     if (masternodeSync.RequestedMasternodeAssets <= MASTERNODE_SYNC_BUDGET) {
-      LogPrint("masternode","CBudgetManager::NewBlock: masternodeSync.RequestedMasternodeAssets(%d) <= MASTERNODE_SYNC_BUDGET(%d) returning!!!!!\n", masternodeSync.RequestedMasternodeAssets, MASTERNODE_SYNC_BUDGET);
+      LogPrint("masternode","CBudgetManager::NewBlock: !!!! masternodeSync.RequestedMasternodeAssets(%d) <= MASTERNODE_SYNC_BUDGET(%d) returning\n", masternodeSync.RequestedMasternodeAssets, MASTERNODE_SYNC_BUDGET);
       return;
     } else {
-      LogPrint("masternode","CBudgetManager::NewBlock: masternodeSync.RequestedMasternodeAssets(%d) > MASTERNODE_SYNC_BUDGET(%d) moving on!!!!!\n", masternodeSync.RequestedMasternodeAssets, MASTERNODE_SYNC_BUDGET);
+      LogPrint("masternode","CBudgetManager::NewBlock: !!!! masternodeSync.RequestedMasternodeAssets(%d) > MASTERNODE_SYNC_BUDGET(%d) moving on\n", masternodeSync.RequestedMasternodeAssets, MASTERNODE_SYNC_BUDGET);
     }
 
-    LogPrint("masternode","CBudgetManager::NewBlock: strBudgetMode=%s\n", strBudgetMode);
+    LogPrint("masternode","CBudgetManager::NewBlock: !!!! strBudgetMode=%s\n", strBudgetMode);
     if (strBudgetMode == "suggest") { //suggest the budget we see
-        LogPrint("masternode","CBudgetManager::NewBlock: strBudgetMode == suggest EUREKA!!!!!!\n");
+        LogPrint("masternode","CBudgetManager::NewBlock: !!!! strBudgetMode == suggest EUREKA\n");
         SubmitFinalBudget();
     }
 
