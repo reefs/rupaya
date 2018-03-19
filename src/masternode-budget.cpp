@@ -125,6 +125,7 @@ void CBudgetManager::CheckOrphanVotes()
 
 void CBudgetManager::SubmitFinalBudget()
 {
+    LogPrint("masternode","CBudgetManager::SubmitFinalBudget started!!!!!\n");
     static int nSubmittedHeight = 0; // height at which final budget was submitted last time
     int nCurrentHeight;
 
@@ -233,6 +234,8 @@ void CBudgetManager::SubmitFinalBudget()
         LogPrint("masternode","CBudgetManager::SubmitFinalBudget - Invalid finalized budget - %s \n", strError);
         return;
     }
+
+    LogPrint("masternode","CBudgetManager::SubmitFinalBudget: before LOCK(cs) before AddFinalizedBudget\n");
 
     LOCK(cs);
     mapSeenFinalizedBudgets.insert(make_pair(finalizedBudgetBroadcast.GetHash(), finalizedBudgetBroadcast));
@@ -399,13 +402,19 @@ void DumpBudgets()
 
 bool CBudgetManager::AddFinalizedBudget(CFinalizedBudget& finalizedBudget)
 {
+    LogPrint("masternode","AddFinalizedBudget, we are in!!!!!!!\n");
     std::string strError = "";
-    if (!finalizedBudget.IsValid(strError)) return false;
+    if (!finalizedBudget.IsValid(strError)) {
+      LogPrint("masternode","AddFinalizedBudget, IsValid return!!!!!!!\n");
+      return false;
+    }
 
     if (mapFinalizedBudgets.count(finalizedBudget.GetHash())) {
+        LogPrint("masternode","AddFinalizedBudget, mapFinalizedBudgets.count return!!!!!!!\n");
         return false;
     }
 
+    LogPrint("masternode","AddFinalizedBudget, before insert!!!!!!!\n");
     mapFinalizedBudgets.insert(make_pair(finalizedBudget.GetHash(), finalizedBudget));
     return true;
 }
@@ -844,11 +853,22 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
 void CBudgetManager::NewBlock()
 {
     TRY_LOCK(cs, fBudgetNewBlock);
-    if (!fBudgetNewBlock) return;
+    if (!fBudgetNewBlock) {
+      LogPrint("masternode","CBudgetManager::NewBlock: fBudgetNewBlock false, returning!!!!!\n");
+      return;
+    } else {
+      LogPrint("masternode","CBudgetManager::NewBlock: fBudgetNewBlock true, moving on!!!!!\n");
+    }
 
-    if (masternodeSync.RequestedMasternodeAssets <= MASTERNODE_SYNC_BUDGET) return;
+    if (masternodeSync.RequestedMasternodeAssets <= MASTERNODE_SYNC_BUDGET) {
+      LogPrint("masternode","CBudgetManager::NewBlock: masternodeSync.RequestedMasternodeAssets(%d) <= MASTERNODE_SYNC_BUDGET(%d) returning!!!!!\n", masternodeSync.RequestedMasternodeAssets, MASTERNODE_SYNC_BUDGET);
+      return;
+    } else {
+      LogPrint("masternode","CBudgetManager::NewBlock: masternodeSync.RequestedMasternodeAssets(%d) > MASTERNODE_SYNC_BUDGET(%d) moving on!!!!!\n", masternodeSync.RequestedMasternodeAssets, MASTERNODE_SYNC_BUDGET);
+    }
 
     if (strBudgetMode == "suggest") { //suggest the budget we see
+        LogPrint("masternode","CBudgetManager::NewBlock: strBudgetMode == "suggest" EUREKA!!!!!!\n");
         SubmitFinalBudget();
     }
 
