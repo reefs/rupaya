@@ -868,7 +868,7 @@ void CBudgetManager::NewBlock()
     }
 
     if (strBudgetMode == "suggest") { //suggest the budget we see
-        LogPrint("masternode","CBudgetManager::NewBlock: strBudgetMode == "suggest" EUREKA!!!!!!\n");
+        LogPrint("masternode","CBudgetManager::NewBlock: strBudgetMode == suggest EUREKA!!!!!!\n");
         SubmitFinalBudget();
     }
 
