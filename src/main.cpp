@@ -4341,8 +4341,11 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
         if (masternodeSync.RequestedMasternodeAssets > MASTERNODE_SYNC_LIST) {
             LogPrintf("%s : !!!! masternodeSync.RequestedMasternodeAssets(%d) > MASTERNODE_SYNC_LIST(%d) \n", __func__, masternodeSync.RequestedMasternodeAssets, MASTERNODE_SYNC_LIST);
             obfuScationPool.NewBlock();
+            LogPrintf("%s : !!!! after obfuScationPool.NewBlock", __func__);
             masternodePayments.ProcessBlock(GetHeight() + 10);
+            LogPrintf("%s : !!!! after masternodePayments.ProcessBlock", __func__);
             budget.NewBlock();
+            LogPrintf("%s : !!!! after budget.NewBlock()", __func__);
         } else {
             LogPrintf("%s : !!!! masternodeSync.RequestedMasternodeAssets(%d) <= MASTERNODE_SYNC_LIST(%d) \n", __func__, masternodeSync.RequestedMasternodeAssets, MASTERNODE_SYNC_LIST);
         }

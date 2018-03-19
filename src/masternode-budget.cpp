@@ -852,8 +852,10 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
 
 void CBudgetManager::NewBlock()
 {
+    LogPrintf("%s : !!!! before TRY_LOCK\n", __func__);
     LogPrint("masternode","CBudgetManager::NewBlock: before TRY_LOCK !!!!!\n");
     TRY_LOCK(cs, fBudgetNewBlock);
+    LogPrintf("%s : !!!! after TRY_LOCK\n", __func__);
     LogPrint("masternode","CBudgetManager::NewBlock: after TRY_LOCK!!!!!\n");
     if (!fBudgetNewBlock) {
       LogPrint("masternode","CBudgetManager::NewBlock: fBudgetNewBlock false, returning!!!!!\n");
