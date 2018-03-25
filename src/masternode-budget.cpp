@@ -32,7 +32,7 @@ int GetBudgetPaymentCycleBlocks()
     if (Params().NetworkID() == CBaseChainParams::MAIN) return 43200;
     //for testing purposes
 
-    return 144; //ten times per day
+    return 1440; //one time a per day
 }
 
 bool IsBudgetCollateralValid(uint256 nTxCollateralHash, uint256 nExpectedHash, std::string& strError, int64_t& nTime, int& nConf)
@@ -608,14 +608,14 @@ bool CBudgetManager::IsBudgetPaymentBlock(int nBlockHeight)
     int nHighestCount = -1;
     int nFivePercent = mnodeman.CountEnabled(ActiveProtocol()) / 20;
 
-    LogPrint("masternode","CBudgetManager::IsBudgetPaymentBlock() ENTERED: nHighestCount(%lli), nFivePercent(%lli), mnodeman.CountEnabled(%lli)\n",
-              nHighestCount, nFivePercent, mnodeman.CountEnabled(ActiveProtocol()));
+    LogPrint("masternode","CBudgetManager::IsBudgetPaymentBlock() ENTERED: nBlockHeight(%lli), nHighestCount(%lli), nFivePercent(%lli), mnodeman.CountEnabled(%lli)\n",
+              nBlockHeight, nHighestCount, nFivePercent, mnodeman.CountEnabled(ActiveProtocol()));
 
     std::map<uint256, CFinalizedBudget>::iterator it = mapFinalizedBudgets.begin();
     while (it != mapFinalizedBudgets.end()) {
         CFinalizedBudget* pfinalizedBudget = &((*it).second);
-        LogPrint("masternode","CBudgetManager::IsBudgetPaymentBlock() WHILE pfinalizedBudget->GetVoteCount(%lli), nHighestCount(%lli), GetBlockStart(%lli) GetBlockEnd(%lli)  \n",
-              pfinalizedBudget->GetVoteCount(), nHighestCount, pfinalizedBudget->GetBlockStart(), pfinalizedBudget->GetBlockEnd());
+        LogPrint("masternode","CBudgetManager::IsBudgetPaymentBlock() WHILE pfinalizedBudget->GetVoteCount(%lli), nHighestCount(%lli), GetBlockStart(%lli) <= nBlockHeight(%lli) <= GetBlockEnd(%lli)  \n",
+              pfinalizedBudget->GetVoteCount(), nHighestCount, pfinalizedBudget->GetBlockStart(), nBlockHeight, pfinalizedBudget->GetBlockEnd());
 
         if (pfinalizedBudget->GetVoteCount() > nHighestCount &&
             nBlockHeight >= pfinalizedBudget->GetBlockStart() &&
