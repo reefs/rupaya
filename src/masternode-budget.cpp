@@ -856,9 +856,9 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
 
     if (Params().NetworkID() == CBaseChainParams::TESTNET) {
         CAmount nSubsidy = 500 * COIN;
-        return ((nSubsidy / 100) * 10) * 146;
+        return ((nSubsidy / 100) * 10) * 1442;
     }
-	return 0;
+    return 0;
 }
 
 void CBudgetManager::NewBlock()
