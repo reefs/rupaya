@@ -210,6 +210,7 @@ bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMin
         }
 
         if (budget.IsBudgetPaymentBlock(nHeight)) {
+            LogPrint("masternode","masternode-payments.cpp::IsBlockValueValid() : IF returning true\n");
             //the value of the block is evaluated in CheckBlock
             return true;
         } else {
@@ -234,6 +235,7 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
     //check if it's a budget block
     if (IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS)) {
         if (budget.IsBudgetPaymentBlock(nBlockHeight)) {
+            LogPrint("masternode","!!! masternode-payments.cpp::IsBlockPayeeValid() IF so far so good\n");
             if (budget.IsTransactionValid(txNew, nBlockHeight))
                 return true;
 
@@ -261,12 +263,15 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
 
 void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStake)
 {
+    LogPrint("masternode","!!! masternode-payments.cpp::FillBlockPayee %d\n", IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS));
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (!pindexPrev) return;
 
     if (IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS) && budget.IsBudgetPaymentBlock(pindexPrev->nHeight + 1)) {
+        LogPrint("masternode","!!! masternode-payments.cpp::FillBlockPayee IIFF going in budget.FillBlockPayee\n");
         budget.FillBlockPayee(txNew, nFees, fProofOfStake);
     } else {
+        LogPrint("masternode","!!! masternode-payments.cpp::FillBlockPayee ELSE going in masternodePayments.FillBlockPayee\n");
         masternodePayments.FillBlockPayee(txNew, nFees, fProofOfStake);
     }
 }
@@ -274,8 +279,10 @@ void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStak
 std::string GetRequiredPaymentsString(int nBlockHeight)
 {
     if (IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS) && budget.IsBudgetPaymentBlock(nBlockHeight)) {
+        LogPrint("masternode","!!! masternode-payments.cpp::GetRequiredPaymentsString IF nBlockHeight=%d\n", nBlockHeight);
         return budget.GetRequiredPaymentsString(nBlockHeight);
     } else {
+        LogPrint("masternode","!!! masternode-payments.cpp::GetRequiredPaymentsString ELSE nBlockHeight=%d\n", nBlockHeight);
         return masternodePayments.GetRequiredPaymentsString(nBlockHeight);
     }
 }
@@ -705,6 +712,7 @@ bool CMasternodePayments::ProcessBlock(int nBlockHeight)
 
     if (budget.IsBudgetPaymentBlock(nBlockHeight)) {
         //is budget payment block -- handled by the budgeting software
+        LogPrint("masternode","CMasternodePayments::ProcessBlock() !!! IF handled by the budgeting software.\n");
     } else {
         LogPrint("masternode","CMasternodePayments::ProcessBlock() Start nHeight %d - vin %s. \n", nBlockHeight, activeMasternode.vin.prevout.hash.ToString());
 
