@@ -668,20 +668,24 @@ bool CBudgetManager::IsTransactionValid(const CTransaction& txNew, int nBlockHei
     // check the highest finalized budgets (+/- 10% to assist in consensus)
 
     it = mapFinalizedBudgets.begin();
+    LogPrint("masternode","CBudgetManager::IsTransactionValid() !!!! before while");
     while (it != mapFinalizedBudgets.end()) {
         CFinalizedBudget* pfinalizedBudget = &((*it).second);
-
+        LogPrint("masternode","CBudgetManager::IsTransactionValid() !!!! before if1 - pfinalizedBudget->GetVoteCount(%lli) > %lli - %lli ?\n", pfinalizedBudget->GetVoteCount(), nHighestCount, mnodeman.CountEnabled(ActiveProtocol()) / 10);
         if (pfinalizedBudget->GetVoteCount() > nHighestCount - mnodeman.CountEnabled(ActiveProtocol()) / 10) {
+            LogPrint("masternode","CBudgetManager::IsTransactionValid() !!!! before if2 - nBlockHeight(%lli) >= %lli && %lli <= %lli ?\n", nBlockHeight, pfinalizedBudget->GetBlockStart(), nBlockHeight, pfinalizedBudget->GetBlockEnd());
             if (nBlockHeight >= pfinalizedBudget->GetBlockStart() && nBlockHeight <= pfinalizedBudget->GetBlockEnd()) {
+                LogPrint("masternode","CBudgetManager::IsTransactionValid() !!!! before if3\n");
                 if (pfinalizedBudget->IsTransactionValid(txNew, nBlockHeight)) {
+                    LogPrint("masternode","CBudgetManager::IsTransactionValid() !!!! returning true, YES!!!!!!!");
                     return true;
                 }
             }
         }
-
         ++it;
     }
 
+    LogPrint("masternode","CBudgetManager::IsTransactionValid() !!!! done with the budgets, returing false");
     //we looked through all of the known budgets
     return false;
 }
