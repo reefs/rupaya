@@ -856,13 +856,18 @@ std::string CBudgetManager::GetRequiredPaymentsString(int nBlockHeight)
 
 CAmount CBudgetManager::GetTotalBudget(int nHeight)
 {
-    if (chainActive.Tip() == NULL) return 0;
+    CAmount nSubsidy = 0;
+    CAmount totalBudget = 0;
+    if (chainActive.Tip() == NULL) return totalBudget;
 
-    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-        CAmount nSubsidy = 500 * COIN;
-        return ((nSubsidy / 100) * 10) * 1442;
-    }
-    return 0;
+    nSubsidy = GetBlockValue(nHeight);
+    LogPrint("masternode","CBudgetManager::GetTotalBudget(%d): GetBlockValue(%d) returned %f COINs\n", nHeight, nHeight, nSubsidy / COIN);
+
+    // Define governance budget as 20% of the block value
+    totalBudget = ((nSubsidy / 100) * 20) * GetBudgetPaymentCycleBlocks();
+
+    LogPrint("masternode","CBudgetManager::GetTotalBudget(%d) returning %f COINs\n", nHeight, totalBudget / COIN);
+    return totalBudget;
 }
 
 void CBudgetManager::NewBlock()
