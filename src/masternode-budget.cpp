@@ -1460,7 +1460,7 @@ bool CBudgetProposal::IsValid(std::string& strError, bool fCheckCollateral)
 
     //can only pay out 10% of the possible coins (min value of coins)
     if (nAmount > budget.GetTotalBudget(nBlockStart)) {
-        strError = "Proposal " + strProposalName + ": Payment more than max";
+        strError = "Proposal " + strProposalName + ": Payment more than max ("+std::to_string(budget.GetTotalBudget(nBlockStart) / COIN)+")";
         return false;
     }
 
