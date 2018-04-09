@@ -2130,11 +2130,8 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 7000000 * COIN;
     } else if (nHeight < 26000 && nHeight > 0) {
         nSubsidy = 100 * COIN;
-    } else if (nHeight <= 35000 && nHeight >= 26000) { // !!!!!!!!!!! TODO: 35k is testnet value, mainet is different, 100k ????
+    } else if (nHeight <= 100000 && nHeight >= 26000) {
         nSubsidy = 120 * COIN;
-    } else if (nHeight <= 100000 && nHeight > 35000) {
-        // reducing block reward here to enable governane budget
-        nSubsidy = 96 * COIN;
     } else if (nHeight <= 200000 && nHeight >= 100000) {
         nSubsidy = 88 * COIN;
     } else if (nHeight <= 300000 && nHeight >= 200000) {
@@ -2146,9 +2143,9 @@ int64_t GetBlockValue(int nHeight)
     } else if (nHeight <= 600000 && nHeight >= 500000) {
         nSubsidy = 56 * COIN;
     } else if (nHeight <= 700000 && nHeight >= 600000) {
-        nSubsidy = 60 * COIN;
-    } else if (nHeight <= 800000 && nHeight >= 700000) {
         nSubsidy = 48 * COIN;
+    } else if (nHeight <= 800000 && nHeight >= 700000) {
+        nSubsidy = 40 * COIN;
     } else if (nHeight <= 900000 && nHeight >= 800000) {
         nSubsidy = 32 * COIN;
     } else if (nHeight <= 1000000 && nHeight >= 900000) {
