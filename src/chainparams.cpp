@@ -54,11 +54,22 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x0000059f8ba2b9ec3f6690af8d118ff1ffd7d791a420636d147846393d7be6b2"));
+    (0, uint256("0x0000059f8ba2b9ec3f6690af8d118ff1ffd7d791a420636d147846393d7be6b2"))
+    (39717, uint256("78e3bf8c49708d13587aec08a5c7bfd75bf8a994e684e16d5fcb9b4785d88fe0"))
+    (39915, uint256("3cb94c5fad11d4c0e324d5c889b6037feb7d0824eeed7fb91e596c220c09827a"))
+    (40277, uint256("f9d336d9a1d4bc7741be2875b5c4ab22bf9228b9397c5e9cc2b9bd8e0bda2f76"))
+    (40408, uint256("73945afe15de19a123f5743d22de33675fef4f180dc76782da5a8e5863ad2dc7"))
+    (40569, uint256("bd3a60dff379ecadca7ea5c83104d1874f76c46d9c311c89267945c938a7bd42"))
+    (42045, uint256("85a26728944cd2d522fa558702ea4e08c15260b51c332263443496231183971d"))
+    (42148, uint256("dc457474aa40a86da3acd0e3875ea9a7ea6e5018b9e8220d6c23038a43b1dce4"))
+    (50000, uint256("63079147f4ab33f7abd301c93969e045d4ebee73356f7b3dc4e211efc9e0bac7"))
+    (60000, uint256("71238e23a4771b1d7dd649dae27a6e74a84517020b60867bdd6eae991f63696c"))
+    (70000, uint256("5802380b9cbc73150a5c1eba101b4b5e84b31a78f7b26f1e4710c2b9393a2297"))
+    (80000, uint256("6093ed8a8545575887785c6c7dd65dfa2860cc7f555c64ba0e8a9367c799d11b"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1514540176, // * UNIX timestamp of last checkpoint block
-    0,    // * total number of transactions between genesis and last checkpoint
+    1523210598, // * UNIX timestamp of last checkpoint block
+    160000,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -160,12 +171,12 @@ public:
         assert(hashGenesisBlock == uint256("0x0000059f8ba2b9ec3f6690af8d118ff1ffd7d791a420636d147846393d7be6b2"));
         assert(genesis.hashMerkleRoot == uint256("0x66a06bfe0091e98d5b26381f6ac6f75b82efb6d181e3480d36dbc57e44393dba"));
 		
-		vSeeds.push_back(CDNSSeedData("dns.rupx.io", "dns.rupx.io"));         // Primary DNS Seeder
-		vSeeds.push_back(CDNSSeedData("dns1.rupx.io", "dns1.rupx.io"));         // Single node address
+	vSeeds.push_back(CDNSSeedData("seeds.rupx.io", "seeds.rupx.io"));         // Primary DNS Seeder
+	vSeeds.push_back(CDNSSeedData("dns1.rupx.io", "dns1.rupx.io"));         // Single node address
         vSeeds.push_back(CDNSSeedData("dns2.rupayacoin.org", "dns2.rupayacoin.org"));       // Single node address
         vSeeds.push_back(CDNSSeedData("dns3.rupayacoin.org", "dns3.rupayacoin.org"));       // Single node address
-		vSeeds.push_back(CDNSSeedData("dns4.rupx.io", "dns4.rupx.io"));
-		vSeeds.push_back(CDNSSeedData("dns5.rupx.io", "dns5.rupx.io")); 		
+	vSeeds.push_back(CDNSSeedData("dns4.rupx.io", "dns4.rupx.io"));
+	vSeeds.push_back(CDNSSeedData("dns5.rupx.io", "dns5.rupx.io")); 		
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 15);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 8);
