@@ -115,7 +115,7 @@ public:
         pchMessageStart[1] = 0x43;
         pchMessageStart[2] = 0x49;
         pchMessageStart[3] = 0x56;
-        vAlertPubKey = ParseHex("04bcbf5f4dab42002143f5b25a2e6fd658dd300508c0fd3c890edfa241edcdd224c9fb62d0a3e86ab655c384b598bd3e92d25fee84774060a0d461f0e9483587e5");
+        vAlertPubKey = ParseHex("04e12261744ae96031ae50ea3eadbd6c003ccb32179d363693b952037c3351e12ffde1ca1816589da56b7e9869bc614175719af8c1b85e39c859272fdd219fb4ac");
         nDefaultPort = 9020;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Rupaya starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
