@@ -69,7 +69,7 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1523210598, // * UNIX timestamp of last checkpoint block
-    160000,    // * total number of transactions between genesis and last checkpoint
+    167942,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
