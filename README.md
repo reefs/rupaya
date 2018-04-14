@@ -18,7 +18,7 @@ More information at [rupx.io](https://www.rupx.io) Visit our ANN thread at [Bitc
 
 ### Coin Specs
 <table>
-<tr><td>Algo</td><td>Quark</td></tr>
+<tr><td>Algo</td><td>Xevan</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
 <tr><td>Max Coin Supply (PoS Phase)</td><td>78,800,000 RUPX</td></tr>
