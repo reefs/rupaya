@@ -46,18 +46,18 @@ Governance proposals (Budget) will be usable starting from _superblock_ **100,00
 <th>Phase</th><th>Block Height</th><th>Reward</th><th>Approx. End Date</th><th>Masternodes</th><th>Stakers</th><th>Governance Max</th>
 <tr><td>Phase 1</td><td>0 ->  26000</td><td>100 RUPX</td><td>2018-03-01</td><td>60 RUPX</td><td>40 RUPX</td><td>0 RUPX</td></tr>
 <tr><td>Phase 2</td><td> 26001 ->  100000</td><td>120 RUPX</td><td>2018-04-21</td><td>72 RUPX</td><td>48 RUPX</td><td>0 RUPX</td></tr>
-<tr><td>Phase 4</td><td>100001 ->  200000</td><td>88 RUPX</td><td>2018-06-29</td><td>66 RUPX</td><td>22 RUPX</td><td>22 RUPX</td></tr>
-<tr><td>Phase 5</td><td>200001 ->  300000</td><td>80 RUPX</td><td>2018-09-07</td><td>60 RUPX</td><td>20 RUPX</td><td>20 RUPX</td></tr>
-<tr><td>Phase 6</td><td>300001 ->  400000</td><td>72 RUPX</td><td>2018-11-15</td><td>54 RUPX</td><td>18 RUPX</td><td>18 RUPX</td></tr>
-<tr><td>Phase 7</td><td>400001 ->  500000</td><td>64 RUPX</td><td>2019-01-24</td><td>48 RUPX</td><td>16 RUPX</td><td>16 RUPX</td></tr>
-<tr><td>Phase 8</td><td>500001 ->  600000</td><td>56 RUPX</td><td>2019-04-03</td><td>42 RUPX</td><td>14 RUPX</td><td>14 RUPX</td></tr>
-<tr><td>Phase 9</td><td>600001 ->  700000</td><td>48 RUPX</td><td>2019-06-12</td><td>36 RUPX</td><td>12 RUPX</td><td>12 RUPX</td></tr>
-<tr><td>Phase 10</td><td>700001 ->  800000</td><td>40 RUPX</td><td>2019-08-20</td><td>30 RUPX</td><td>10 RUPX</td><td>10 RUPX</td></tr>
-<tr><td>Phase 11</td><td>800001 ->  900000</td><td>32 RUPX</td><td>2019-10-28</td><td>24 RUPX</td><td>8 RUPX</td><td>8 RUPX</td></tr>
-<tr><td>Phase 12</td><td>900001 -> 1000000</td><td>24 RUPX</td><td>2020-01-06</td><td>18 RUPX</td><td>6 RUPX</td><td>6 RUPX</td></tr>
-<tr><td>Phase 13</td><td>1000001 -> 1100000</td><td>16 RUPX</td><td>2020-03-15</td><td>12 RUPX</td><td>4 RUPX</td><td>4 RUPX</td></tr>
-<tr><td>Phase 14</td><td>1100001 -> 1200000</td><td>8 RUPX</td><td>2020-05-24</td><td>6 RUPX</td><td>2 RUPX</td><td>2 RUPX</td></tr>
-<tr><td>Phase 15</td><td>1200001 -> INFINITE</td><td>0.001 RUPX</td><td>3000-01-01</td><td>0.00075 RUPX</td><td>0.00025 RUPX</td><td>0.00025 RUPX</td></tr>
+<tr><td>Phase 3</td><td>100001 ->  200000</td><td>88 RUPX</td><td>2018-06-29</td><td>66 RUPX</td><td>22 RUPX</td><td>22 RUPX</td></tr>
+<tr><td>Phase 4</td><td>200001 ->  300000</td><td>80 RUPX</td><td>2018-09-07</td><td>60 RUPX</td><td>20 RUPX</td><td>20 RUPX</td></tr>
+<tr><td>Phase 5</td><td>300001 ->  400000</td><td>72 RUPX</td><td>2018-11-15</td><td>54 RUPX</td><td>18 RUPX</td><td>18 RUPX</td></tr>
+<tr><td>Phase 6</td><td>400001 ->  500000</td><td>64 RUPX</td><td>2019-01-24</td><td>48 RUPX</td><td>16 RUPX</td><td>16 RUPX</td></tr>
+<tr><td>Phase 7</td><td>500001 ->  600000</td><td>56 RUPX</td><td>2019-04-03</td><td>42 RUPX</td><td>14 RUPX</td><td>14 RUPX</td></tr>
+<tr><td>Phase 8</td><td>600001 ->  700000</td><td>48 RUPX</td><td>2019-06-12</td><td>36 RUPX</td><td>12 RUPX</td><td>12 RUPX</td></tr>
+<tr><td>Phase 9</td><td>700001 ->  800000</td><td>40 RUPX</td><td>2019-08-20</td><td>30 RUPX</td><td>10 RUPX</td><td>10 RUPX</td></tr>
+<tr><td>Phase 10</td><td>800001 ->  900000</td><td>32 RUPX</td><td>2019-10-28</td><td>24 RUPX</td><td>8 RUPX</td><td>8 RUPX</td></tr>
+<tr><td>Phase 11</td><td>900001 -> 1000000</td><td>24 RUPX</td><td>2020-01-06</td><td>18 RUPX</td><td>6 RUPX</td><td>6 RUPX</td></tr>
+<tr><td>Phase 12</td><td>1000001 -> 1100000</td><td>16 RUPX</td><td>2020-03-15</td><td>12 RUPX</td><td>4 RUPX</td><td>4 RUPX</td></tr>
+<tr><td>Phase 13</td><td>1100001 -> 1200000</td><td>8 RUPX</td><td>2020-05-24</td><td>6 RUPX</td><td>2 RUPX</td><td>2 RUPX</td></tr>
+<tr><td>Phase 14</td><td>1200001 -> INFINITE</td><td>0.001 RUPX</td><td>3000-01-01</td><td>0.00075 RUPX</td><td>0.00025 RUPX</td><td>0.00025 RUPX</td></tr>
 </table>
 
 The Governance percentage is only added into circulation if there are proposals voted by the MasterNodes every month.
