@@ -12,6 +12,7 @@ src/rupaya-cli
 src/rupaya-tx
 src/test/test_rupaya
 src/qt/test/test_rupaya-qt
+src/leveldb/build_config.mk
 
 # autoreconf
 Makefile.in
