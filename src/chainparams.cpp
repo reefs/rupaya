@@ -54,11 +54,22 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x0000059f8ba2b9ec3f6690af8d118ff1ffd7d791a420636d147846393d7be6b2"));
+    (0, uint256("0x0000059f8ba2b9ec3f6690af8d118ff1ffd7d791a420636d147846393d7be6b2"))
+    (39717, uint256("78e3bf8c49708d13587aec08a5c7bfd75bf8a994e684e16d5fcb9b4785d88fe0"))
+    (39915, uint256("3cb94c5fad11d4c0e324d5c889b6037feb7d0824eeed7fb91e596c220c09827a"))
+    (40277, uint256("f9d336d9a1d4bc7741be2875b5c4ab22bf9228b9397c5e9cc2b9bd8e0bda2f76"))
+    (40408, uint256("73945afe15de19a123f5743d22de33675fef4f180dc76782da5a8e5863ad2dc7"))
+    (40569, uint256("bd3a60dff379ecadca7ea5c83104d1874f76c46d9c311c89267945c938a7bd42"))
+    (42045, uint256("85a26728944cd2d522fa558702ea4e08c15260b51c332263443496231183971d"))
+    (42148, uint256("dc457474aa40a86da3acd0e3875ea9a7ea6e5018b9e8220d6c23038a43b1dce4"))
+    (50000, uint256("63079147f4ab33f7abd301c93969e045d4ebee73356f7b3dc4e211efc9e0bac7"))
+    (60000, uint256("71238e23a4771b1d7dd649dae27a6e74a84517020b60867bdd6eae991f63696c"))
+    (70000, uint256("5802380b9cbc73150a5c1eba101b4b5e84b31a78f7b26f1e4710c2b9393a2297"))
+    (80000, uint256("6093ed8a8545575887785c6c7dd65dfa2860cc7f555c64ba0e8a9367c799d11b"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1514540176, // * UNIX timestamp of last checkpoint block
-    0,    // * total number of transactions between genesis and last checkpoint
+    1523210598, // * UNIX timestamp of last checkpoint block
+    167942,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -104,7 +115,7 @@ public:
         pchMessageStart[1] = 0x43;
         pchMessageStart[2] = 0x49;
         pchMessageStart[3] = 0x56;
-        vAlertPubKey = ParseHex("04bcbf5f4dab42002143f5b25a2e6fd658dd300508c0fd3c890edfa241edcdd224c9fb62d0a3e86ab655c384b598bd3e92d25fee84774060a0d461f0e9483587e5");
+        vAlertPubKey = ParseHex("04e12261744ae96031ae50ea3eadbd6c003ccb32179d363693b952037c3351e12ffde1ca1816589da56b7e9869bc614175719af8c1b85e39c859272fdd219fb4ac");
         nDefaultPort = 9020;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Rupaya starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
@@ -160,12 +171,12 @@ public:
         assert(hashGenesisBlock == uint256("0x0000059f8ba2b9ec3f6690af8d118ff1ffd7d791a420636d147846393d7be6b2"));
         assert(genesis.hashMerkleRoot == uint256("0x66a06bfe0091e98d5b26381f6ac6f75b82efb6d181e3480d36dbc57e44393dba"));
 		
-		vSeeds.push_back(CDNSSeedData("dns.rupx.io", "dns.rupx.io"));         // Primary DNS Seeder
-		vSeeds.push_back(CDNSSeedData("dns1.rupx.io", "dns1.rupx.io"));         // Single node address
+	vSeeds.push_back(CDNSSeedData("seeds.rupx.io", "seeds.rupx.io"));         // Primary DNS Seeder
+	vSeeds.push_back(CDNSSeedData("dns1.rupx.io", "dns1.rupx.io"));         // Single node address
         vSeeds.push_back(CDNSSeedData("dns2.rupayacoin.org", "dns2.rupayacoin.org"));       // Single node address
         vSeeds.push_back(CDNSSeedData("dns3.rupayacoin.org", "dns3.rupayacoin.org"));       // Single node address
-		vSeeds.push_back(CDNSSeedData("dns4.rupx.io", "dns4.rupx.io"));
-		vSeeds.push_back(CDNSSeedData("dns5.rupx.io", "dns5.rupx.io")); 		
+	vSeeds.push_back(CDNSSeedData("dns4.rupx.io", "dns4.rupx.io"));
+	vSeeds.push_back(CDNSSeedData("dns5.rupx.io", "dns5.rupx.io")); 		
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 15);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 8);
@@ -188,8 +199,8 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "0459eede7626441f7802af2736cb3a4aeb3e1f95070cde39d068a4f16525ee8fdd3c075f29f9e115aeb91952239194aa6ac19765574fed8a0d7f174f2b450e9630";
-        strObfuscationPoolDummyAddress = "Ceax8jHDQ1s2kHVjysEoTQncVdUrNBuXtp";
+        strSporkKey = "044f33f91b733047e892a291aca182de8ebcfa25891a57d91f8d599ab1174107ca18a6f6cfaab8c5412ac4fb3866cec0bb790731768e4e6e9e608ecdc4f1f3e222";
+        strObfuscationPoolDummyAddress = "7Djk6ufsEvdXt5ckKBnrRQcH5LiSVnudE5";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
 
         /** Zerocoin */
@@ -220,11 +231,11 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x43;
-        pchMessageStart[1] = 0x76;
-        pchMessageStart[2] = 0x65;
-        pchMessageStart[3] = 0xba;
-        vAlertPubKey = ParseHex("042292b1f401860eea99e1a8a103effbd7e1c013a59a1a3a0c91c9d1997a0bc6f338567278c11344802838c107055bf7c1641eaed61e879245c255a4f5be5746fc");
+        pchMessageStart[0] = 0x7c;
+        pchMessageStart[1] = 0xba;
+        pchMessageStart[2] = 0x1b;
+        pchMessageStart[3] = 0x54;
+        vAlertPubKey = ParseHex("04a11dcd8586111b335034b93157a1c85efbab0848ec05e786c0df8f6ea827126d5d706a0d9a99b81bb98c6973ec15976de7d8195483b9145747a901e1ff0e5c5a");
         nDefaultPort = 51434;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
@@ -279,7 +290,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "04188441e39d99aa69068ee07d26980f459b84465bbd765c6ee15d1aec5b76b5aebb01b24be184a1d3a12af61276549d96cc9499d909f8afc183132837d18d643d";
+        strSporkKey = "0433888dad0a73c5472244432df8f7458ca83ac634ab28bcff47bcd7588feed8b214f11d817dad4e1cf2b940ef487990ab169ce1c9c64af09a91dc8084752167ec";
         strObfuscationPoolDummyAddress = "xp87cG8UEQgzs1Bk67Yk884C7pnQfAeo7q";
         nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
@@ -303,10 +314,10 @@ public:
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
         strNetworkID = "regtest";
-        pchMessageStart[0] = 0x69;
-        pchMessageStart[1] = 0xcf;
-        pchMessageStart[2] = 0x7e;
-        pchMessageStart[3] = 0xac;
+        pchMessageStart[0] = 0x1a;
+        pchMessageStart[1] = 0x6f;
+        pchMessageStart[2] = 0x13;
+        pchMessageStart[3] = 0x35;
         nSubsidyHalvingInterval = 150;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
