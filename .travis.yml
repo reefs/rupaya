@@ -69,8 +69,7 @@ deploy:
   secure: AyETnQvwBqCGzmLtJYMjmQLJGqD6pe1GzfTOiEBIaUnrrGtgzdPjwrZ2FJt0myywPqsIAJozcGgcVBtqgznMxBIXG/ApyZ1dGGFwRtHCyWV39jfgFyn7Fg9PSopmLim1fEmEttl2/WMA6K0NlAhkFXqem3WrhuWucYksRy1y7GP9R4BL7XQTRth+vBoBo9yWPCvv8Yb0vIDOianX8rxzByU+NG5t9LSF3t9CRaiyTdP9T+YyLGpzrZohafWrLo6HRoi1sSZvmFKuIlc+B5Wm1oYTkJAx8swb7iU5DAPtm6CBH7+qKhIQCgXSs+KlBORxKVjTpP5GoAKvvnBv5QNONeX9nqjjHYdPEGANLg+kRjLuT0nKxhynZpdvKdhvmljEL4kjfQneh9mQcgcA3CaF3tu9yn9ZW4yqizM+DUGZFUfr6z2nYO5jsad7fCQ3QO+WdfpZkVdhCSlA4HTysq54dwAaKisLn2gXnrip7OiVWMaQqY2Cw4p/ke1+45CdMgv1D4gWMonr58guBtHz+Xwvyo3ANl/5hgLroZLVJRuM/nBI1ma8CwHFymioEblFhTB6InR+JTHCOyENOTl9GT0RAEvbl9MjecfGLGHa8z6Kc5knBYxSxB1k+SWB6LwmVDrFUP4bXnNEs3FTMPBYc9o5wZ20GBTccEh+XFRGX7qv8I8=
   bucket: rupaya
   acl: public_read
-  local_dir: $BASE_OUTDIR/$TRAVIS_PULL_REQUEST/$TRAVIS_JOB_NUMBER-$HOST
   upload_dir: $TRAVIS_JOB_NUMBER
   cache_control: "max-age=21600"
   on:
-    repo: rupaya-project/rupaya
+      all_branches: true
