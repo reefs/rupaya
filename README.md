@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/rupaya-project/rupaya.svg?branch=travis)]
+
+[![Build Status](https://travis-ci.org/rupaya-project/rupaya.svg?branch=master)](https://travis-ci.org/rupaya-project/rupaya) 
+
 
 ### Rupaya is a fork of [PIVX](https://github.com/PIVX-Project/PIVX) that forked [Dash](https://github.com/dashpay/dash) that forked [Bitcoin](https://github.com/bitcoin/bitcoinp)
 
