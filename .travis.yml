@@ -53,7 +53,11 @@ script:
     # Convert the timeout exit code to 0.
     RESULT=$?; if [ $RESULT -eq 0 ] || [ $RESULT -eq 142 ]; then true; else false; fi;
 before_deploy:
-- "./pre-deploy.sh"
+# Set up git user name and tag this commit
+      - git config --local user.name "rupaya-project"
+      - git config --local user.email "dev@rupayacoin.org"
+      - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
+      - "./pre-deploy.sh"
 deploy:
   provider: releases
   api_key:
@@ -62,6 +66,8 @@ deploy:
   skip_cleanup: true
   on:
     repo: rupaya-project/rupaya
+  on:
+    tags: true  
 deploy:
   provider: s3
   access_key_id: AKIAIKPTCZAG4GFH5EPQ
