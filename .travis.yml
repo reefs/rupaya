@@ -57,20 +57,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: J1s13lMfeVCK2cUjqumh/5fMRpxDsBOVxmf33eUxRU4KEk3M/+FzDoPk5kQ/C8gQNQ6n38/pi+K53jd4uIx0YVolMoeyRlsVYDAT3JGMWBDZycicGLchoaqHZZ8IMPdX0AFTRkOEl1bur0UhPN7EM+CKctyjDfxkAeGIUJnpY9zdRqqee8BerQp8krNwhYD2q5TmyFC1UbLsSourb6/h1bc3AVHHvX2VA7NieaicSDq9jcrm6iAPbasrxEbbA1bavUAkfWynGzzyPANke7rCu83ACMX4tJaU50m8jKF13tNEL586nypaIwxc0FAeHR105zQk3oQf2cLY2O8oTZ2r6im4G/AjrN/gQrL4tPZwp/P4OW6Bdf1Tgl29xDo8Sg6NImhFASMyjuc5jcHz+vxEED0eJwfvgs5S2EVt7io4YOEDl+z50SLamSwcW+/WqHF7ql2oI7GOhZulJ0bK6oErN7JRgxZCG12TYjXAt9oln3oTfPgGDmr7UWlWPbn84GTV4jGKPc8GZX5Asfv06h+EwOzLsFKzspV0TcQJQDjRb80tOvBphYE9JvkZMrP1iLbQkKB0/7ZKxUosXr2eBt3nu6no21x1FcWDE/n8HDnFdAU0NUepEOlcMGuUe+JEq7F4ic/vzkchGSMpkULgg4bxTsPbMUD2N+IHLZu14IWFPMg=
-  file_glob: true
+    secure: NGE60l7Lbs74ihAOqqiiD18vkVcYI0SDc3fIt3NBKfHiprvHTnldDNNrOIOuIDsg0LII65JJo1NKf7JJB86bfhqSrLyDnkeCmJRXjjSYjzKaAcLbRvixTSx9bVkHwOTTYXEhFpp9dZKjcqinPxnuO6FQf7bH0xiF6WtVQeK8oMjY3JcQZwOssbof5XSBbPaQLCFSWDyhJ7jdOqMprTd9Agq5RdxjRaaT9bYiykbqLbI6KgH5kNbkLcu734iYdWCZr+tfngUYc2teGwCkF7LYl6o2OPoW0byyitfDqjlBKIBCxPQwsFXL1QphyNiYWMlpU5yA9XqgSz5+WHhhPzO1GAOKTRiE+8Cpv7Pf55F1Z39N36howhhKS9c0mvAdxDrEkk5T2tLkdHOwrja7sgn374uXgI2u8ucb7W7iBfQO3tZ1tNBihj5+ks3Rv5nup8TgmJGcu4MadFqzGZH6uaj7cFRMZZWRVaKgQGdox0snk/Wmh0hcaTfIJv9Fg4ioEOhH/ecOOGdJIgLCL0ccmp/ynIRMF4Q3jGeAsch0MImTK6WkP9VJwOOSuM2daB/MVCJISyHa945BbP6fou9CneqH/X/3G5EbXes+8Itcdg/SabWIW7PGvTdWn7T1g5DYAn4MN1UgRiI+hQqL3oVRqmVyOu2a+Q97HxzF1lbhHfQCfus=
   file: out/**/zip/*
   on:
     repo: rupaya-project/rupaya
-  skip_cleanup: true
-  
-  provider: s3
-    access_key_id: $ARTIFACTS_KEY
-    secret_access_key: $ARTIFACTS_SECRET
-    bucket: $ARTIFACTS_BUCKET
-    skip_cleanup: true
-    acl: public_read
-    upload_dir: $TRAVIS_JOB_NUMBER
-    cache_control: "max-age=21600"
-    on:
-      all_branches: true  
