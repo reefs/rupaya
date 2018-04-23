@@ -66,5 +66,5 @@ Governance proposals (Budget) will be usable starting from _superblock_ **100,00
 
 The Governance percentage is only added into circulation if there are proposals voted by the MasterNodes every month.
 
-The information in the table can be cross checked with the code [here](https://github.com/rupaya-project/rupaya/blob/v4.0.0/src/main.cpp#L2131-L2158). `Approx. End Date` has been calculated based on the target block time of 60 seconds.
+The information in the table can be cross checked with the code [here](https://github.com/rupaya-project/rupaya/blob/master/src/main.cpp#L2131-L2158). `Approx. End Date` has been calculated based on the target block time of 60 seconds.
 
