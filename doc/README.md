@@ -28,8 +28,8 @@ Drag Rupaya-Qt to your applications folder, and then run Rupaya-Qt.
 
 * See the documentation at the [Rupaya Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [Rupaya Forum](http://Rupayacoin.com/).
-* Join one of our Discord groups [Rupaya Discord Groups](https://discord.gg/YcnvMqt).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=2956408.0).
+* Join one of our Discord groups [Rupaya Discord Groups](https://discord.gg/8tbvMQM).
 
 Building
 ---------------------
@@ -55,8 +55,8 @@ The Rupaya repo's [root README](https://github.com/eastcoastcrypto/Rupaya/blob/m
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) .
-* Join the [Rupaya-Dev] Discord groups [Rupaya Discord Groups](https://discord.gg/YcnvMqt).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=2956408.0) .
+* Join the [Rupaya-Dev] Discord groups [Rupaya Discord Groups](https://discord.gg/8tbvMQM).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
