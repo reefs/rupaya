@@ -75,7 +75,9 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 7. In the "Projects" tab select "Manage Kits..."
 8. Select the default "Desktop" kit and select "Clang (x86 64bit in /usr/bin)" as compiler
 9. Select LLDB as debugger (you might need to set the path to your installtion)
-10. Start debugging with Qt Creator
+10. In the "Projects" tab under **Build & Run** select "Desktop" -> `Build`
+11. Set the `Build directory` to the `root` of the cloned Rupaya project. Qt Creator needs this to locate the `Makefile`
+12. Start debugging with Qt Creator
 
 Creating a release build
 ------------------------
