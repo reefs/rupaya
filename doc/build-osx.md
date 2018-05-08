@@ -44,7 +44,7 @@ Instructions: Homebrew
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/eastcoastcrypto/Rupaya.git
+        git clone https://github.com/rupaya-project/rupaya.git
         cd Rupaya
 
 2.  Build rupayad:
