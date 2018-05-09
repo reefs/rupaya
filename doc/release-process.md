@@ -26,7 +26,7 @@ Check out the source code in the following directory hierarchy.
     git clone https://github.com/eastcoastcrypto/gitian.sigs.git
     git clone https://github.com/eastcoastcrypto/rupaya-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/eastcoastcrypto/rupaya.git
+    git clone https://github.com/rupaya-project/rupaya.git
 
 ### Rupaya maintainers/release engineers, suggestion for writing release notes
 
