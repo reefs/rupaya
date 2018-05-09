@@ -41,7 +41,7 @@ The following are developer notes on how to build Rupaya on your native platform
 
 Development
 ---------------------
-The Rupaya repo's [root README](https://github.com/eastcoastcrypto/Rupaya/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Rupaya repo's [root README](https://github.com/rupaya-project/rupaya/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
