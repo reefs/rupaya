@@ -1,17 +1,15 @@
 (note: this is a temporary file, to be added-to by anybody, and moved to release-notes at release time)
 
-Rupaya Core version *version* is now available from:
+Rupaya Core *version* is now available from:
 
-  <https://github.com/eastcoastcrypto/Rupaya/releases>
+  <https://github.com/rupaya-project/rupaya/releases>
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/eastcoastcrypto/Rupita/issues>
+  <https://github.com/rupaya-project/rupaya/issues>
 
 Mandatory Update
 ==============
-
-simul autem fortior nobis
 
 How to Upgrade
 ==============
@@ -35,8 +33,6 @@ frequently tested on them.
 Notable Changes
 ===============
 
-simul autem fortior nobis
-
 *version* Change log
 =================
 
@@ -49,8 +45,4 @@ git merge commit are mentioned.
 Credits
 =======
 
-Thanks to everyone who directly contributed to this release:
-- GOAT
-- Jamison
-
-
+Thanks to everyone who directly contributed to this release.
