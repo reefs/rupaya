@@ -56,7 +56,7 @@ The Rupaya repo's [root README](https://github.com/eastcoastcrypto/Rupaya/blob/m
 ### Resources
 
 * Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=2956408.0) .
-* Join the [Rupaya-Dev] Discord groups [Rupaya Discord Groups](https://discord.gg/8tbvMQM).
+* Join the [Rupaya Discord Group](https://discord.gg/8tbvMQM).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
