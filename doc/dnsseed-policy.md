@@ -45,8 +45,7 @@ related to the DNS seed operation.
 
 If these expectations cannot be satisfied the operator should
 discontinue providing services and contact the active Rupaya
-Core development team as well as posting on the
-[Rupaya Forum](https://rupayacoin.com).
+Core development team on the [Rupaya Discord Group](https://discord.gg/8tbvMQM).
 
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.
