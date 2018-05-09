@@ -29,7 +29,7 @@ Table of Contents
 - [Building Rupaya](#building-rupaya)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
-- [Uploading signatures](#uploading-signatures)
+- [Uploading signatures](#uploading-signatures-not-yet-implemented)
 
 Preparing the Gitian builder host
 ---------------------------------
