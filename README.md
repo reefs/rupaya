@@ -17,7 +17,7 @@ Rupaya is a cutting edge cryptocurrency, with many features not available in mos
   technology used to secure the network and provide the above features, each Masternode is secured
   with a collateral of 10K RUPX.
 
-More information at [rupx.io](https://www.rupx.io) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php)
+More information at [rupx.io](https://www.rupx.io). Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=2956408.0).
 
 
 ### Coin Specs
